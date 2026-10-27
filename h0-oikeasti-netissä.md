@@ -58,4 +58,6 @@ Asensin tätä tehtävää varten apache2 paketin komennolla `sudo apt install a
 
 # Lähteet
 
+Karvinen, T. 2026. Palvelinten-hallinta. Luento. Haaga-Helia. 22.10.2026
+
 Karvinen, T. 2026. Palvelinten-hallinta. luettavissa: https://terokarvinen.com/palvelinten-hallinta/
