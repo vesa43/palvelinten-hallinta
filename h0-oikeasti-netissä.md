@@ -55,3 +55,7 @@ Tämän jälkeen käytin komentoa `sudo usermod --lock root` jolla salasana kirj
 ## tehtävä d)
 
 Asensin tätä tehtävää varten apache2 paketin komennolla `sudo apt install apache2`. Muuta ei oikeastaan tarvinnut tehdä apache meni suoraan päälle ja sen löysi kirjoittamalla selaimeen "http://palvelimen_ip", ja seuraava default apache sivu ponnahti näytölle <img width="1016" height="920" alt="image" src="https://github.com/user-attachments/assets/caa8931f-5f8c-482e-a04d-488e545533d8" />
+
+# Lähteet
+
+Karvinen, T. 2026. Palvelinten-hallinta. luettavissa: https://terokarvinen.com/palvelinten-hallinta/
