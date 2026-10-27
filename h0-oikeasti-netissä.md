@@ -31,4 +31,23 @@ Tässä vielä kuva serverin spekseistä <img width="845" height="204" alt="imag
 
 ## tehtävä c)
 
-Aloitin asentamalla palomuurin, luomalla säännön jolla ssh yhteys sallitaan portista 22 ja laittamalla palomuurin päälle: <img width="734" height="235" alt="image" src="https://github.com/user-attachments/assets/499e5f23-afe3-4212-bc43-a9aadd8b2c66" />
+Ennen kuin pääsin aloittamaan tehtävän tajusin, että olin tehnyt ssh avainparin läppärillä koulussa ja halusin saada yhteyden serveriin omalta kotikoneelta, jolla ei tietysti ollut aiemmin luotua private avainta. Päätin ratkoa ongelman luomalla uuden parin kotikoneella, ja syöttää saatu public avain authorized_keys tiedostoon ssh yhteydellä. tämä kävi helposti käyttämällä komentoa `echo "Oma public key" >> ~/.ssh/authorized_keys`. Tämän jälkeen sain otettua toiselta koneelta yhteyden ssh kautta ja pääsin itse tehtävään käsiksi.
+
+Aloitin tehtävän asentamalla palomuurin, luomalla säännön jolla ssh yhteys sallitaan portista 22 ja laittamalla palomuurin päälle. Tässä kuva jälkeen päin annetuista komennoista 
+
+<img width="734" height="235" alt="image" src="https://github.com/user-attachments/assets/499e5f23-afe3-4212-bc43-a9aadd8b2c66" />
+
+
+Seuraavaksi tein käyttäjän komennolla `sudo adduser vesa` ja käytin komentoa `sudo adduser vesa sudo`, jolloin käyttäjä myös lisättiin sudo listaan eli se saa sudo oikeudet.
+
+Seuraavan kopioin .ssh kansion sisältöineen juuri luodulle käyttäjälle "vesa" komennolla `cp -R .ssh /home/vesa/.ssh`. tarkistin vielä että haluttu tulos saatiin aikaseksi.
+
+<img width="541" height="232" alt="image" src="https://github.com/user-attachments/assets/e7b0cbc5-4e65-492f-8e9e-346997caa0f9" />
+
+Tämän jälkeen käytin komentoja `chmod 700 /home/vesa/.ssh` ja `chmod 600 /home/vesa/.ssh/authorized_keys`, joilla asetettiin oikeudet oikeiksi. Ja vielä viimeiksi vaihdoin kansion omistajuuden uudelle käyttäjälle komennolla `chown -R vesa:vesa /home/vesa/.ssh`.
+
+Lopuksi vielä testasin että kaikki toimii kirjatumalla uudelle käyttäjälle sekä ajamalla yhden sudo komennon, jotta sekin varmasti toimii.
+
+<img width="1034" height="466" alt="image" src="https://github.com/user-attachments/assets/68853027-a40b-42f3-923b-7a2047c137d7" />
+
+Tämän jälkeen käytin komentoa `sudo usermod --lock root` jolla salasana kirjautuminen root käyttäjälle pystyttiin disabloimaan, sekä vaihdoin config tiedostosta kohdan "PermitRootLogin yes -> no" .
