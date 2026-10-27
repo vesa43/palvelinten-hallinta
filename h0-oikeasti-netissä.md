@@ -51,3 +51,7 @@ Lopuksi vielä testasin että kaikki toimii kirjatumalla uudelle käyttäjälle 
 <img width="1034" height="466" alt="image" src="https://github.com/user-attachments/assets/68853027-a40b-42f3-923b-7a2047c137d7" />
 
 Tämän jälkeen käytin komentoa `sudo usermod --lock root` jolla salasana kirjautuminen root käyttäjälle pystyttiin disabloimaan, sekä vaihdoin config tiedostosta kohdan "PermitRootLogin yes -> no" .
+
+## tehtävä d)
+
+Asensin tätä tehtävää varten apache2 paketin komennolla `sudo apt install apache2`. Muuta ei oikeastaan tarvinnut tehdä apache meni suoraan päälle ja sen löysi kirjoittamalla selaimeen "http://palvelimen_ip", ja seuraava default apache sivu ponnahti näytölle <img width="1016" height="920" alt="image" src="https://github.com/user-attachments/assets/caa8931f-5f8c-482e-a04d-488e545533d8" />
