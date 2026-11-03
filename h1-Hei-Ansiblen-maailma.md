@@ -61,6 +61,39 @@ Seuraavan kerran ajettuani komennon uudelleen varoitus ei enää tullut.
 
 <img width="563" height="95" alt="image" src="https://github.com/user-attachments/assets/6f20318a-5aa5-4088-a8f2-2f1c5b5d0d4b" />
 
+### Seuraavaksi tein ansiblelle sen vaatiman kansio rakenteen ja tiedostot
 
+Komennolla `mkdir -p roles/hello/tasks` sain luotua kansiot. Tiedostoja varten käytin komentoja `touch ansible.cfg && touch site.yml` ja kansioon tasks `touch main.yml`
+
+rakenne näyttää nyt seuraavalta.
+
+<img width="254" height="219" alt="image" src="https://github.com/user-attachments/assets/ccf02a77-b562-4a13-ab5c-6cd8f9c933ac" />
+
+Tämän jälkeen käytin microa ja lisäsin tiedostoihin seuraavat tekstit:
+
+### ansible.cfg
+```
+[defaults]
+inventory = hosts.ini
+```
+
+### site.yml
+
+```
+- hosts: all
+  roles::
+    - hello
+```
+
+### main.yml
+
+```
+- copy
+    dest: /tmp/hello-ansible
+    content: "Hei Ansiblen maailma"
+```
+
+Kun nyt ajoin komennon `ansible-playbook site.yml` kaikki näytti toimivan ja tuli changed 1, eli yhtä tiedostoa on muutettu
 ## tehtävä e)
+
 
