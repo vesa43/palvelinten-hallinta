@@ -119,6 +119,14 @@ Sitten vaan loin uuden tiedoston stop.yml johon kirjoitin seuraavat asiat.
 
 Kuvassa siis näkyy, että hosts on asetettu osoittamaan tähän palvelin ryhmään. Ja tasks osio on kirjoitettu suoraan tähän tiedostoon. Jotta komento saatiin toimimaan, käytin siihen `ansible.builtin.shell: pm2 stop kissa-leaderboard`, joka käytännössä siis vaan lähettää komennon shelliin ja tämän prosessin saa siis palvelimen puolelta ajettua ihan samalla tavalla eli `pm2 stop kissa-leaderboard`
 
+kun komento sitten ajetaan prosessi pysähtyy palvelimella
+
+<img width="933" height="246" alt="image" src="https://github.com/user-attachments/assets/8924ef36-f38f-4a9a-b92f-7ad4c9dcb831" />
+
+Ja sama voidaan nähdä palvelimella 
+
+<img width="735" height="158" alt="image" src="https://github.com/user-attachments/assets/bb9c4c9d-e84f-4bee-b614-43e013f14fab" />
+
 ## Lähteet
 
 Karvinen, T. 2026. Palvelinten Hallinta. Verkkosivu. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/. Luettu: 3.11.2026
