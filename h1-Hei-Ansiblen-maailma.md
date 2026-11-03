@@ -68,7 +68,7 @@ Komennolla `mkdir -p roles/hello/tasks` sain luotua kansiot. Tiedostoja varten k
 
 rakenne näyttää nyt seuraavalta.
 
-<img width="254" height="219" alt="image" src="https://github.com/user-attachments/assets/ccf02a77-b562-4a13-ab5c-6cd8f9c933ac" />
+<img width="248" height="216" alt="image" src="https://github.com/user-attachments/assets/ccc3e533-e6d7-4fa7-a61d-53870011a1a8" />
 
 Tämän jälkeen käytin microa ja lisäsin tiedostoihin seuraavat tekstit:
 
