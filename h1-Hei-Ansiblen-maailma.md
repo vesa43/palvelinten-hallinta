@@ -102,8 +102,22 @@ Ansiblen toiminta voidaan varmistaa käymällä katsomassa tuliko tuo tiedosto n
 
 <img width="828" height="233" alt="image" src="https://github.com/user-attachments/assets/7b7caf80-a43f-43bf-a295-76024ac5557d" />
 
-
 ## tehtävä e)
+
+Tätä tehtävää varten ajattelin, tehdä sellaisen komennon ansiblella, joka sammuttaa vps palvelimelta tietyn prosessin joka on oikeastaan palvelimella pyörivän nettipelin backendi. 
+Tässä kuva miltä prosessi näyttää palvelimella, ja kuvassa siis näkyy, että prosessi on nyt päällä.
+
+<img width="728" height="160" alt="image" src="https://github.com/user-attachments/assets/06251918-d947-451f-a1e8-fee94f6c48b0" />
+
+Tätä varten muokkasin eka hosts.ini tiedostoa niin, että localhostilla on nyt oma ryhmä ja palvelimella on oma ryhmä.
+
+<img width="451" height="181" alt="image" src="https://github.com/user-attachments/assets/4de4257a-264c-49a3-aeda-f04103199833" />
+
+Sitten vaan loin uuden tiedoston stop.yml johon kirjoitin seuraavat asiat.
+
+<img width="547" height="134" alt="image" src="https://github.com/user-attachments/assets/7ab71d57-3f93-4a40-9874-6d1c9b68cd14" />
+
+Kuvassa siis näkyy, että hosts on asetettu osoittamaan tähän palvelin ryhmään. Ja tasks osio on kirjoitettu suoraan tähän tiedostoon. Jotta komento saatiin toimimaan, käytin siihen `ansible.builtin.shell: pm2 stop kissa-leaderboard`, joka käytännössä siis vaan lähettää komennon shelliin ja tämän prosessin saa siis palvelimen puolelta ajettua ihan samalla tavalla eli `pm2 stop kissa-leaderboard`
 
 ## Lähteet
 
