@@ -37,6 +37,8 @@ Käytin aluksi komentoa `ssh-keygen` jolla sain ssh avaimet luotua. tämän jäl
 
 ## tehtävä d)
 
+Käytin tätä tehtävää varten Teron artikkelia ohjeena: https://terokarvinen.com/hello-ansible/
+
 Käytin komentoa `sudo apt install ansible -y`. Tällä komennolla sain asennettua ansiblen ja tarkastin vielä komennolla `ansible --version`
 
 <img width="727" height="256" alt="image" src="https://github.com/user-attachments/assets/f41844d1-fdb6-4408-8e54-d15747da6999" />
@@ -46,6 +48,18 @@ Tämän jälkeen lisäsin kansion komennolla `mkdir ansible` ja loin tänne host
 <img width="201" height="86" alt="image" src="https://github.com/user-attachments/assets/052e3d1a-5ae0-4955-8405-c2f6a92a6f8e" />
 
 Kokeilin ansiblen toiminnan käyttämällä komentoa `ansible all -a 'uptime' -i hosts.ini`
+
+<img width="736" height="182" alt="image" src="https://github.com/user-attachments/assets/674c9fc3-8b04-4000-a997-342f34789ffd" />
+
+kuvasta voidaan nähdä, että komento toimii mutta tulee varoitus pythoniin liittyen.
+Tämän varoituksen sai kuitenkin helposti pois laittamalla hosts.ini tiedostoon seuraavan pätkän 
+```
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+```
+Seuraavan kerran ajettuani komennon uudelleen varoitus ei enää tullut.
+
+<img width="563" height="95" alt="image" src="https://github.com/user-attachments/assets/6f20318a-5aa5-4088-a8f2-2f1c5b5d0d4b" />
 
 
 ## tehtävä e)
