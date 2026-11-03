@@ -11,7 +11,8 @@ Tiivistelmä. karvinen 2026: Hello ansible (https://terokarvinen.com/hello-ansib
 
 - Tällä sivulla kerrotaan siitä miten Ansible saadaan asennettua ja miten sitä voidaan konfiguroida.
 - Ansiblea käytetään eri koneiden keskitettyyn hallintaan ja se toimii ssh kautta.
-- 
+- Ansiblen käyttöön liittyy erilaisia setup tiedostoja, jolla se saadaan toimimaan.
+- Ansible toimii tietynlaisella kansio rakenteella.
 
 ## tehtävä a)
 
@@ -104,4 +105,9 @@ Ansiblen toiminta voidaan varmistaa käymällä katsomassa tuliko tuo tiedosto n
 
 ## tehtävä e)
 
+## Lähteet
 
+Karvinen, T. 2026. Palvelinten Hallinta. Verkkosivu. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/. Luettu: 3.11.2026
+Karvinen, T. 2026. Palvelinten Hallinta. Luento 29.10.2026. Haaga-Helia ammattikorkeakoulu. Helsinki
+Karvinen, T. 2026. Hello Ansible. verkkosivu. Luettavissa https://terokarvinen.com/hello-ansible/. Luettu 3.11.2026
+Karvinen, T. 2026. SSH public key - Login without password. Verkkosivu. Luettavissa https://terokarvinen.com/ssh-public-key-login-without-password/. Luettu 3.11.2026
