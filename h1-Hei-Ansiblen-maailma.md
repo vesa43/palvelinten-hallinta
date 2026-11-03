@@ -94,6 +94,14 @@ inventory = hosts.ini
 ```
 
 Kun nyt ajoin komennon `ansible-playbook site.yml` kaikki näytti toimivan ja tuli changed 1, eli yhtä tiedostoa on muutettu
+
+<img width="811" height="288" alt="image" src="https://github.com/user-attachments/assets/4e6f74e7-e42e-4686-9022-1f95f45d4fe4" />
+
+Ansiblen toiminta voidaan varmistaa käymällä katsomassa tuliko tuo tiedosto nyt haluttuun sijaintiin, eli ssh yhteys localhostiin ja `cat /tmp/hello-ansible` ja kaikki näytti olevan juuri niinkuin pitää.
+
+<img width="828" height="233" alt="image" src="https://github.com/user-attachments/assets/7b7caf80-a43f-43bf-a295-76024ac5557d" />
+
+
 ## tehtävä e)
 
 
