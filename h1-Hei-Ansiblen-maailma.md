@@ -29,12 +29,24 @@ Katsoin komennolla `sudo systemctl status ssh`, että ssh oli nyt päällä jonk
 
 ## tehtävä c)
 
+_Käytin tähän tehtävään Teron luennolla näyttämää tapaa._
+
 Käytin aluksi komentoa `ssh-keygen` jolla sain ssh avaimet luotua. tämän jälkeen käytin komentoa `ssh-copy-id localhost`, jolla sain ssh avaimet asetettua localhostille, niin että salasanaton kirjautuminen lähti toimimaan. Kokeilin vielä, että kaikki toimii käyttämällä komentoa `ssh localhost` uudelleen ja tällä kertaa salasanaa ei kysytty ja pääsin heti sisään.
 
 <img width="719" height="447" alt="image" src="https://github.com/user-attachments/assets/aa5b427e-1274-4b07-9a3b-299677012ff3" />
 
-
 ## tehtävä d)
+
+Käytin komentoa `sudo apt install ansible -y`. Tällä komennolla sain asennettua ansiblen ja tarkastin vielä komennolla `ansible --version`
+
+<img width="727" height="256" alt="image" src="https://github.com/user-attachments/assets/f41844d1-fdb6-4408-8e54-d15747da6999" />
+
+Tämän jälkeen lisäsin kansion komennolla `mkdir ansible` ja loin tänne hosts.ini tiedoston microlla `micro hosts.ini` ja kirjoitin tiedostoon localhost ja tallensin sen
+
+<img width="201" height="86" alt="image" src="https://github.com/user-attachments/assets/052e3d1a-5ae0-4955-8405-c2f6a92a6f8e" />
+
+Kokeilin ansiblen toiminnan käyttämällä komentoa `ansible all -a 'uptime' -i hosts.ini`
+
 
 ## tehtävä e)
 
