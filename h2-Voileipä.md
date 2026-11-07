@@ -67,7 +67,7 @@ Ajoin tämän jälkeen `site.yml`, johon olin lisännyt tämän uuden roolin ja 
 
 ## tehtävä d)
 
-Loin uuden roolin nimeltä file ja sen site.yml tiedostoon kirjoitin seuraavat asiat
+Loin uuden roolin nimeltä file ja sen `site.yml` tiedostoon kirjoitin seuraavat asiat:
 
 ```yaml
 - name: "Monirivinen tiedosto"
@@ -82,9 +82,15 @@ Loin uuden roolin nimeltä file ja sen site.yml tiedostoon kirjoitin seuraavat a
     mode: "0700"
 ```
 
+Ja lisäsin tämän roolin taas `site.yml` tiedostoon, ja ajoin komennolla `ansible-playbook site.yml`.
+Kaikki meni läpi ja tiedosto saatiin onnistuneesti luotua.
+
 <img width="455" height="146" alt="image" src="https://github.com/user-attachments/assets/74b8d2d6-a89b-4ebd-9e53-3fe8aa79106f" />
 
+`main.yml` tiedostossa käytetyt oikeudet (`mode: "0700"`) tarkoittaa sitä, että pelkästään omistajalla on kaikki oikeudet eli read, write ja execute, mutta muilla käyttäjillä ei ole oikeuksia. Tämän myös voi huomata aikasemmasta kuvasta kun laitoin aluksi ilman sudoa `cat /etc/salainen.txt`, tuli vastaan virhe että ei ole permejä. Kun taas käytin sudoa sain luettua tiedoston. Oikeudet numeerisesti voi laskea yhteen eli 4 = read, 2 = write ja 1 = execute. Tässä tapauksessa oli käytössä 7 eli 4+2+1 = 7. Ja missä kohtaa oikeudet täytyy olla numeroissa? Ensimmäinen numero koskee omistajaa, seuraava koskee ryhmää ja viimeinen koskee kaikkia.
 
 ## tehtävä e)
+
+
 
 ## tehtävä f)
