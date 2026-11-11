@@ -1,5 +1,14 @@
 ## tehtävä x)
 
+Tiivistelmä. Karvinen 2026: Sudo without password (https://terokarvinen.com/passwordless-sudo/)
+- Tässä tekstissä kerrotaan kuinka saadaan tehtyä uusi käyttäjä, joka ei tarvitse sudon käyttämiseen salasanaa.
+- visudo komennolla voidaan muokata joitain tärkeitä konfiguraatio tiedostoja ilman, että ne menevät rikki.
+
+
+Tiivistelmä. Karvinen 2026: Passwordless Sudo with Ansible (https://terokarvinen.com/passwordless-sudo-with-ansible/)
+- Tässä tektissä kerrotaan miten voidaan luoda käyttäjä, jolla voi käyttää sudoa ilman salasanaa ansiblea varten.
+- Ensimmäisellä kerralla pitää käyttää -K lippua, jotta ohjelma osaa kysyä sudo salasanaa, jotta käyttäjä voidaan luoda.
+
 ## tehtävä a)
 
 Etenin tässä tehtävässä teron ohjeiden mukaisesti (https://terokarvinen.com/passwordless-sudo/)
