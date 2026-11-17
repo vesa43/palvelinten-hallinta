@@ -81,3 +81,10 @@ Ja vielä että testisivu näkyy selaimessa
 
 ## Lähteet
 
+Karvinen, T. 2026. Palvelinten Hallinta. Verkkosivu. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/. Luettu: 17.11.2026
+
+Karvinen, T. 2026. Palvelinten Hallinta. Luento 29.10.2026. Haaga-Helia ammattikorkeakoulu. Helsinki
+
+Karvinen, T. 2026. Apache installed with Ansible - quick notes. verkkosivu. Luettavissa: https://terokarvinen.com/apache-ansible/. Luettu 17.11.2026
+
+Ansible project, 2026. Handlers: running operations on change. Verkkosivu. Luettavissa: https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html. Luettu 17.11.2026
