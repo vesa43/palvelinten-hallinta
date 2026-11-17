@@ -76,7 +76,5 @@ Ja vielä että testisivu näkyy selaimessa
 <img width="551" height="292" alt="image" src="https://github.com/user-attachments/assets/8e042976-b274-414f-a74a-ad393bff3c0c" />
 
 
+## Lähteet
 
-## tehtävä d)
-
-## tehtävä e)
