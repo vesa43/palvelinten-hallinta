@@ -1,6 +1,26 @@
 ## tehtävä x)
 
+### Tiivistelmä: Karvinen 2026: Apache installed with Ansible - quick notes (https://terokarvinen.com/apache-ansible/)
+- Tekstissä puhutaan siitä, kuinka apache saadaan asennettua ansiblella
+- Apachen toiminta on jaettu kolmeen eri rooliin, files handlers ja tasks, jotka hoitavat kaikki työt
+- Tiedoston lopun notify rivillä voidaan kutsua playbookin handleria restart apache2, jos tila muuttuu copy tai file kohdissa
+
+### Tiivistelmä: Ansible Community Documentation: Handlers: running operations on change (https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html)
+- Handlerein idea on suorittaa jokin toiminto, vain jos jotain muuttuu
+- Handlerit voivat olla hyödyllisiä esimerkiksi, kun jotain konfiguraatiota muutetaan, jolloin palvelu täytyy uudelleen käynnistää
+- Handleria voidaan kutsua tehtävän aikanan notify sanalla
+
+
+### Tiivistelmä: ansible-doc service
+- ansible.built.service on tavallaan välikäsi jonka kautta voidaan käyttää kohdejärjestelmän service manageria
+- enabled: määrittää käynnistetäänkö palvelu käynnistyksessä
+- name: palvelun nimi
+- state: määrittää palvelun tilan, started/stopped tekee vain jos tarvitsee, mutta restarted ja reloaded ajetaan aina
+- EXAMPLES: näyttää esimerkkejä komennon käytöstä ja eri tilojen vaikutuksen komentojen suorittamiseen. 
+
 ## tehtävä y)
+
+
 
 ## tehtävä a)
 
@@ -51,7 +71,7 @@ varmistetaan vielä että kaikki meni niin kuin piti eli kansioista `var/www/htm
 
 <img width="534" height="110" alt="image" src="https://github.com/user-attachments/assets/315fa09b-b179-439b-ab6a-c1c9af7d0d50" />
 
-Ja vielä että testisivu nökyy selaimessa
+Ja vielä että testisivu näkyy selaimessa
 
 <img width="551" height="292" alt="image" src="https://github.com/user-attachments/assets/8e042976-b274-414f-a74a-ad393bff3c0c" />
 
