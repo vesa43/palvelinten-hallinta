@@ -16,6 +16,7 @@ kirjoitin debianin selaimeen localhost ja se näytti default sivun.
 
 <img width="1145" height="652" alt="image" src="https://github.com/user-attachments/assets/d5d709a4-8f0e-44de-96b9-b257ca33f48b" />
 
+Jotta peruskäyttäjä voi muokata sivua pitää sivun tiedostolla olla oikeudet asetettu oikein eli 
 ## tehtävä b)
 
 Asensin NginX komennolla `sudo apt install nginx`
@@ -32,9 +33,24 @@ Aloitin tehtävän luomalla kansio rakenteen.
 
 <img width="419" height="475" alt="image" src="https://github.com/user-attachments/assets/85524bf8-7940-456f-a98a-a325b69a20a7" />
 
-lisäsin kansioon `roles/nginx/tasks/` tiedoston `main.yml` ja siihen seuraavana sisällön.
+Lisäsin kansioon `roles/nginx/tasks/` tiedoston `main.yml` ja siihen seuraavana sisällön.
 
-<img width="886" height="491" alt="image" src="https://github.com/user-attachments/assets/e007dab2-d00c-4da2-a420-688df2a7d67c" />
+<img width="337" height="548" alt="image" src="https://github.com/user-attachments/assets/6cc1f1ef-5478-466c-a00f-dd040b216bbd" />
+
+"Luodaan index.html" kohdassa kansioon lisätään index.html ja sille annetaan group www-data, jotta nginx pystyy käyttämään sitä, mutta tavallaan oikeuksien ollessa 777 kaikilla on jo muutenkin oikeudet.
+
+Lisäsin vielä lopuksi `site.yml` tiedostoon uuden roolin `nginx`.
+Kun uusi rooli ajettiin komennolla `ansible-playbook site.yml` kaikki näytti tulosteen mukaan oikein.
+
+<img width="807" height="366" alt="image" src="https://github.com/user-attachments/assets/48ae05a7-5800-437c-8c20-a8559f9972f5" />
+
+varmistetaan vielä että kaikki meni niin kuin piti eli kansioista `var/www/html/` löytyy oikeat tiedostot ja oikeudet on oikein asetettu.
+
+<img width="534" height="110" alt="image" src="https://github.com/user-attachments/assets/315fa09b-b179-439b-ab6a-c1c9af7d0d50" />
+
+
+
+
 
 
 
