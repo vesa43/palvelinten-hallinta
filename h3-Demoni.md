@@ -16,7 +16,8 @@ kirjoitin debianin selaimeen localhost ja se näytti default sivun.
 
 <img width="1145" height="652" alt="image" src="https://github.com/user-attachments/assets/d5d709a4-8f0e-44de-96b9-b257ca33f48b" />
 
-Jotta peruskäyttäjä voi muokata sivua pitää sivun tiedostolla olla oikeudet asetettu oikein eli 
+Jotta peruskäyttäjä voi muokata sivua pitää sivun tiedostolla olla oikeudet asetettu oikein eli `sudo chmod 777 index.html`
+
 ## tehtävä b)
 
 Asensin NginX komennolla `sudo apt install nginx`
@@ -26,6 +27,8 @@ Tässä kohtaa selvisi, että nginx näyttää nyt localhostissa index.html tied
 Seuraavaksi keksin vaihtaa index.html sivun nimeä väliaikaisesti index.html2, ja tämän jälkeen sain sivun näkyviin.
 
 <img width="656" height="282" alt="image" src="https://github.com/user-attachments/assets/23773149-66ab-41fc-8303-c81e51d1229d" />
+
+Jotta oikeudet taas saadaan asetettua `sudo chmod 777 index.nginx-debian.html`
 
 ## tehtävä c)
 
@@ -48,9 +51,9 @@ varmistetaan vielä että kaikki meni niin kuin piti eli kansioista `var/www/htm
 
 <img width="534" height="110" alt="image" src="https://github.com/user-attachments/assets/315fa09b-b179-439b-ab6a-c1c9af7d0d50" />
 
+Ja vielä että testisivu nökyy selaimessa
 
-
-
+<img width="551" height="292" alt="image" src="https://github.com/user-attachments/assets/8e042976-b274-414f-a74a-ad393bff3c0c" />
 
 
 
