@@ -20,7 +20,10 @@
 
 ## tehtävä y)
 
-
+### Tiivistelmä: Arora 2025: Replacing cron jobs with a centralized task scheduler (https://mayhul.com/posts/scheduled-tasks/)
+- Artikkeli käsittelee siirtymistä yksittäisistä cron-jobeista keskitettyyn tehtävienhallintajärjestelmään.
+- Ratkaisu perustuu siihe, että tehtävät tallennetaan tietokantaan ja niitä hallitaan tietokantataulun avulla
+- Virheiden jäljitys ja uusien tehtävien lisääminen olisi huomattavasti helpompaa
 
 ## tehtävä a)
 
