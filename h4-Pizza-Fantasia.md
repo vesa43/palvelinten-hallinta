@@ -1,5 +1,23 @@
 ## tehtävä x)
 
+### Tiivistelmä: Configuration Management of Distributed Systems over Unreliable and Hostile Networks (Karvinen, 2024, s. 112-117)
+
+### Sivu 112
+- Saltin DSL on todella suuri, se sisältää 510 tilafunktiota ja 75000 sanaa.
+- toimii Jinja2 mallien avulla, jotka käännetään YAML koodiksi ja siitä eteenpäin pythoniin, joka luo vielä yhden kerroksen abstraktiota.
+- Puppet taas on huomattavasti suppeampi 113 funktiolla ja toimii hyvin eri tavalla.
+
+### sivut 112 - 115
+- Vaikka konfiguraationhallintatyökaluihin on sisällytetty todella paljon funktiota, todellisuudessa vain pieni ydin osa hoitaa useimmat käytännön tehtävät.
+- Demonit käyttävät pääsääntöisesti "package-file-service" rakennetta ja client applikaatiot "package-file" rakennetta.
+- USGCB hoitaa suurilta osin tiedostojen manipuloinnin muokkaamalla jo olemassa olevia tiedostoja augeas käskyllä.
+
+### sivut 115 - 117
+- Idempotenttius on kaiken keskiössä, eli muutoksia tehdään vain jos niitä tarvitaan, esim. tarkastamalla tiedostojen olemassa olo jonka jälkeen sisältö ja tekemällä vain tarvittavat muutokset.
+- Monet funktiot käyttävät itse järjestelmän sisäänrakennettuja toimintoja ja järjestelmän stabiilisuus voi heiketä, jos niitä lähdetään ylikirjoittamaan toisilla työkaluilla.
+- Korkeamman tason funktiot rakentuvat alhaalta ylös ja monet asiat voidaan suorittaa perus rakennuspalikoilla.
+- Lisä abstraktion hyödyt ovat kyseenalaisia, sillä ne saattavat monessa tapauksessa lisätä monimutkaisuutta turhaan.
+
 ## tehtävä a)
 
 Asensin tehtävää varten chrony paketin, ja testasin sen asennuksen käyttämällä komentoa `sudo systemctl status chrony`
@@ -69,3 +87,10 @@ Käytin komentoa `ansible-playbook site.yml | grep -A 2 "^PLAY RECAP"`, jolla sa
 
 ## Lähteet:
 
+Karvinen, T. 2024. Configuration Management of Distributed Systems over Unreliable and Hostile Networks. Väitöskirja. University of Westminster. Luettavissa: https://westminsterresearch.westminster.ac.uk/download/4cc417566aa9af60fe3826d690719e390abdb7a3c8672f3d51b1eb4ca75e7624/1427236
+
+Karvinen, T. 2026. Palvelinten hallinta. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/. Luettu: 24.11.2026.
+
+Karvinen, T. 2026. Palvelinten hallinta. Luento 19.11.2026. Haaga-Helia ammattikorkeakoulu.
+
+Ansible Documentation 2026. ansible.builtin collection. Luettavissa: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/. Luettu: 24.11.2026.
