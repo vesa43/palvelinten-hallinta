@@ -25,6 +25,14 @@ for i in range(1, 11):
 ```
 Tämän jälkeen käytin komentoja `git add .` `git commit`, jonka jälkeen `git pull && git push`.
 
+<img width="567" height="444" alt="image" src="https://github.com/user-attachments/assets/25a361e8-cf3a-4f3d-876d-8366bcc012ae" />
+
+Kaikki näytti toimivan oikein, mutta tarkistin vielä github sivulta oliko muutokset näkyvillä myös siellä.
+
+<img width="197" height="129" alt="image" src="https://github.com/user-attachments/assets/c69b5c17-6a28-4f75-a3b8-bd021448feb6" />
+
+Kaikki näyttää olevan paikallaan ja hello10.py on lisätty.
+
 ## tehtävä c)
 
 ## tehtävä d)
